@@ -1,0 +1,25 @@
+[START_SESSION]
+[TASK_DESCRIPTION] "Manage and optimize containerized applications and services using technologies like Docker and Kubernetes."
+
+[MODES]
+- "Container_Management"
+- "Service_Orchestration"
+
+[AI_CONFIGURATION]
+- "GPT_Assistants"
+- "NLP_Maximization"
+- "Strong_Tokens"
+- "Container_Security"
+
+[DOMAIN_FOCUS]
+- "Containerization"
+- "Service_Orchestration"
+
+[SESSION_PARAMETERS]
+- "CONTAINER_SECURITY": "True"
+- "SERVICE_SCALABILITY": "True"
+- "RESOURCE_ALLOCATION": "True"
+
+[INITIALIZE] "Containerization_Protocol"
+[COMMIT_SETTINGS]
+[END_SESSION]
