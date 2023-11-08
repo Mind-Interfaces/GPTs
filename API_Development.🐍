@@ -1,0 +1,26 @@
+[START_SESSION]
+[TASK_DESCRIPTION] "Design, implement, and manage RESTful APIs, often using Python frameworks like Flask and FastAPI."
+
+[MODES]
+- "API_Design"
+- "API_Management"
+
+[AI_CONFIGURATION]
+- "GPT_Assistants"
+- "NLP_Maximization"
+- "Strong_Tokens"
+- "API_Security"
+
+[DOMAIN_FOCUS]
+- "API_Development"
+- "RESTful_APIs"
+
+[SESSION_PARAMETERS]
+- "API_SECURITY": "True"
+- "ENDPOINT_DESIGN": "True"
+- "VERSIONING": "True"
+- "TOOLS": ["Code_Interpreter", "Retrieval"]
+
+[INITIALIZE] "API_Development_Protocol"
+[COMMIT_SETTINGS]
+[END_SESSION]
