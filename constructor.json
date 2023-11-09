@@ -1,0 +1,82 @@
+{
+  "PEP8_guidelines": {
+    "A_GoalSetting": {
+      "indentation": "Use 4 spaces per indentation level."
+    },
+    "B_PerformanceMetrics_ProblemDefinition": {
+      "imports": "Imports should be on separate lines and grouped with standard library imports first."
+    },
+    "C_DataCollectionAnalysis": {
+      "whitespace": "Avoid extraneous whitespace in expressions and statements."
+    },
+    "D_EDA_GatheringData": {
+      "comments": "Inline comments should be separated by at least two spaces from the statement."
+    },
+    "E_ModelArchitectureDesign": {
+      "naming_conventions": {
+        "function_names": "Function names should be lowercase, with words separated by underscores.",
+        "variable_names": "Variable names follow the same convention as function names."
+      }
+    },
+    "F_Customization_Research": {
+      "naming_conventions": {
+        "constants": "Constants are usually defined on a module level and written in all capital letters with underscores separating words."
+      }
+    },
+    "G_TrainingSetup": {
+      "line_length": "Limit all lines to a maximum of 79 characters."
+    },
+    "H_Software_Hardware": {
+      "indentation": "Continuation lines should align wrapped elements either vertically, or using a hanging indent."
+    },
+    "I_TrainingValidation": {
+      "blank_lines": "Surround top-level function and class definitions with two blank lines."
+    },
+    "J_ModelTraining_DataSplit": {
+      "source_file_encoding": "Source file encoding should be defined at the top of the file."
+    },
+    "K_Validation": {
+      "imports": "Imports are always put at the top of the file, just after any module comments and docstrings."
+    },
+    "L_ModelEvaluation": {
+      "whitespace_in_expressions": "Avoid whitespace immediately before a comma, semicolon, or colon."
+    },
+    "M_Analysis_Testing": {
+      "comments": "Block comments should be consistent with the block of code they refer to."
+    },
+    "N_Optimization": {
+      "naming_conventions": {
+        "class_names": "Class names should normally use the CapWords convention."
+      }
+    },
+    "O_Regularization_HyperparameterTuning": {
+      "programming_recommendations": "Use function-based defaults where appropriate."
+    },
+    "P_Deployment": {
+      "programming_recommendations": "Use compound statements (multiple statements on the same line) sparingly."
+    },
+    "Q_RealWorldTesting_ModelConversion": {
+      "execution": "Code should be written in a way that does not depend on the CPython memory management implementation."
+    },
+    "R_FeedbackLoop": {
+      "programming_recommendations": "Comparisons to singletons like None should always be done with 'is' or 'is not', never the equality operators."
+    },
+    "S_IterativeImprovement_UserFeedback": {
+      "programming_recommendations": "Use 'is not' operator rather than 'not ... is'."
+    },
+    "T_DocumentationSharing": {
+      "comments": "Use docstrings for modules, functions, classes, and methods."
+    },
+    "U_Publication_Documentation": {
+      "documentation_strings": "Write docstrings for all public modules, functions, classes, and methods."
+    },
+    "V_ContinuousMonitoringMaintenance": {
+      "imports": "Wildcard imports (from <module> import *) should be avoided."
+    },
+    "W_Updates_PerformanceMonitoring": {
+      "naming_conventions": {
+        "module_names": "Modules should have short, lowercase names, possibly with underscores."
+      }
+    }
+  }
+}
