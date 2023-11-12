@@ -1,0 +1,64 @@
+{
+  "Synchronet GPT Framework": {
+    "HostOS": {
+      "Name": "Synchronet GPT",
+      "Version": "3.18",
+      "Description": "A multi-node GPT system"
+    },
+    "Functions": {
+      "LoadSHARD": {
+        "Description": "Load extended SHARD data objects",
+        "Usage": "LoadSHARD(branchNumber, shardData)",
+        "Parameters": {
+          "branchNumber": "The specific SHARD branch number",
+          "shardData": "The JSON data object for the branch"
+        },
+        "Implementation": {
+          "Function": "loadSHARD",
+          "Code": "function loadSHARD(branchNumber, shardData) { /* Implementation code here */ }"
+        }
+      },
+      "InitializeBBS": {
+        "Description": "Initialize the Synchronet GPT system",
+        "Usage": "InitializeGPT(config)",
+        "Parameters": {
+          "config": "Configuration settings for the GPT"
+        },
+        "Implementation": {
+          "Function": "initializeGPT",
+          "Code": "function initializeGPT(config) { /* Implementation code here */ }"
+        }
+      },
+      "StartBBS": {
+        "Description": "Start the Synchronet GPT system",
+        "Usage": "StartGPT()",
+        "Implementation": {
+          "Function": "startGPT",
+          "Code": "function startGPT() { /* Implementation code here */ }"
+        }
+      },
+      "UseCodeInterpreter": {
+        "Description": "Enable code interpretation for active analysis",
+        "Usage": "UseCodeInterpreter(code)",
+        "Parameters": {
+          "code": "The Python code or math question to be interpreted"
+        },
+        "Implementation": {
+          "Function": "useCodeInterpreter",
+          "Code": "function useCodeInterpreter(code) { /* Implementation code here */ }"
+        }
+      }
+    },
+    "AdditionalParameters": {
+      "tools": [
+        "Code_Interpreter",
+        "Retrieval",
+        "DALLE"
+      ],
+      "file_ids": [
+        "file_id_1",
+        "file_id_2"
+      ]
+    }
+  }
+}
