@@ -6,16 +6,16 @@
       "Description": "A multi-node GPT system"
     },
     "Functions": {
-      "LoadSHARD": {
+      "LoadSHARDS": {
         "Description": "Load extended SHARD data objects",
-        "Usage": "LoadSHARD(branchNumber, shardData)",
+        "Usage": "LoadSHARDS(shardGPT, shardData)",
         "Parameters": {
-          "branchNumber": "The specific SHARD branch number",
+          "shardGPT": "The specific GPT branch to be loaded",
           "shardData": "The JSON data object for the branch"
         },
         "Implementation": {
           "Function": "loadSHARD",
-          "Code": "function loadSHARD(branchNumber, shardData) { /* Implementation code here */ }"
+          "Code": "function loadSHARD(shardGPT, shardData)"
         }
       },
       "InitializeGPT": {
@@ -26,7 +26,7 @@
         },
         "Implementation": {
           "Function": "initializeGPT",
-          "Code": "function initializeGPT(config) { /* Implementation code here */ }"
+          "Code": "function initializeGPT(config)"
         }
       },
       "StartGPT": {
@@ -34,30 +34,38 @@
         "Usage": "StartGPT()",
         "Implementation": {
           "Function": "startGPT",
-          "Code": "function startGPT() { /* Implementation code here */ }"
+          "Code": "function startGPT(RUN)"
         }
       },
-      "UseCodeInterpreter": {
-        "Description": "Enable code interpretation for active analysis",
-        "Usage": "UseCodeInterpreter(code)",
-        "Parameters": {
-          "code": "The Python code or math question to be interpreted"
-        },
-        "Implementation": {
-          "Function": "useCodeInterpreter",
-          "Code": "function useCodeInterpreter(code) { /* Implementation code here */ }"
+      "RUN": {
+      "Description": "Enable code interpretation for active analysis",
+      "Usage": "RUN(code)",
+      "Parameters": {
+        "code": "The Python code or math question to be interpreted"
+      },
+      "Implementation": {
+        "Function": "RUN",
+        "Code": "return result = code_interpreter.interpret(code)"
         }
       }
     },
     "AdditionalParameters": {
       "tools": [
-        "Code_Interpreter",
-        "Retrieval",
-        "DALLE"
+        {"type": "code_interpreter"},
+        {"type": "retrieval"},
+        {"type": "dall-e-3"},
+        {"type": "function", "name": "LoadSHARDS"},
+        {"type": "function", "name": "InitializeGPT"},
+        {"type": "function", "name": "StartGPT"},
+        {"type": "function", "name": "RUN"}
       ],
       "file_ids": [
-        "file_id_1",
-        "file_id_2"
+        {"file_id_1": "LUNAR-SHARD.json"},
+        {"file_id_2": "SOLAR-SHARD.json"},
+        {"file_id_3": "MERCURY-SHARD.json"},
+        {"file_id_4": "VENUS-SHARD.json"},
+        {"file_id_5": "MARS-SHARD.json"},
+        {"file_id_6": "JUPITER-SHARD.json"}
       ]
     }
   }
