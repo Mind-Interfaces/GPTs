@@ -18,7 +18,7 @@
           "Code": "function loadSHARD(branchNumber, shardData) { /* Implementation code here */ }"
         }
       },
-      "InitializeBBS": {
+      "InitializeGPT": {
         "Description": "Initialize the Synchronet GPT system",
         "Usage": "InitializeGPT(config)",
         "Parameters": {
@@ -29,7 +29,7 @@
           "Code": "function initializeGPT(config) { /* Implementation code here */ }"
         }
       },
-      "StartBBS": {
+      "StartGPT": {
         "Description": "Start the Synchronet GPT system",
         "Usage": "StartGPT()",
         "Implementation": {
